@@ -1,5 +1,5 @@
 # Questboard
-## a guild questboard for villagers and adventurers
+### a guild questboard for villagers and adventurers
 - react
 - springboot
 - mysql
