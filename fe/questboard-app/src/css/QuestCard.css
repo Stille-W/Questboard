@@ -1,0 +1,190 @@
+.cardTilte {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cardTime {
+    color: darkred;
+    border: 1px solid darkred;
+    padding: 6px 18px;
+    border-radius: 8px;
+}
+
+.cardContext {
+    width: 78%;
+    height: 72%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.cardDesc {
+    margin-bottom: 16px;
+}
+
+.cardStatus {
+    border: 4px dotted rgb(255, 255, 255, 0.8);
+    padding: 32px 32px;
+    font-size: 16px;
+    border-radius: 50%;
+    font-weight: 600;
+    background-color: rgb(90, 0, 0, 0.7);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-position: center;
+    transition-property: opacity;
+    width: 600px;
+    height: 450px;
+    color: white;
+    font-size: 16px;
+    /* width: 33%;
+    height: 50%; */
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    /* background-image:
+    linear-gradient(0, rgba(255,255,255,0.5), rgba(255,255,255,0.0)),
+    url("../../public/kanban_himo2_summer.png"); */
+    background-image: url("../../public/kanban_himo2_summer.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.cardHr {
+    background: rgb(224,224,224);
+    /* background: linear-gradient(0deg, rgba(224,224,224,1) 0%, rgba(44,44,44,1) 52%, rgba(224,224,224,1) 100%); */
+    width: 80%;
+    height: 2px;
+    margin: 16px;
+    border: transparent;
+}
+
+.questBg {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.questContent {
+    color: white;
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-position: center;
+    transition-property: opacity;
+    z-index: 1;
+    width: 623px;
+    height: 536px;
+}
+
+.questContent::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../public/kanban_yoko2_summer.png");
+    background-size: cover;
+    background-position: center;
+    width: 120%;
+    height: 120%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.closeBtn {
+    position: absolute;
+    right: -2%;
+    top: 22%;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    color: white;
+    padding: 8px 32px;
+    border-radius: 14px;
+    border: 1px solid white;
+    background: transparent;
+    transition: all 0.3s;
+}
+
+.closeBtn:hover, .moreBtn:hover {
+    color: black;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+
+  .btnArea {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    right: 14%;
+    bottom: 24%;
+    font-size: 14px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+  }
+
+  .moreBtn {
+    color: white;
+    padding: 8px 32px;
+    margin-top: 16px;
+    border-radius: 14px;
+    border: 1px solid white;
+    background: transparent;
+    transition: all 0.3s;
+  }
+
+  .acceptBtn {
+    color: black;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 8px 28px;
+    margin-top: 16px;
+    border-radius: 14px;
+    transition: all 0.3s;
+  }
+
+  .acceptBtn:hover {
+    color: white;
+    border: 1px solid white;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .acceptBtn:disabled {
+    background: gray;
+  }
+
+  
+  .acceptBtn:disabled:hover {
+    color: black;
+    border: 1px solid gray;
+    cursor: not-allowed;
+  }
