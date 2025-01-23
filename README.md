@@ -1,12 +1,17 @@
 # Questboard
 ### a guild questboard for villagers and adventurers
-- react
-- springboot
-- mysql
-- spring security
-- mybatis
-- jwt
-- rsa
+- front-end
+  - react
+- back-end
+  > based on java
+  - springboot
+  - spring security
+- DB
+  - mysql
+  - mybatis
+- others
+  - jwt
+  - rsa
 ----
 - sign up  
 ![ainfo](https://github.com/user-attachments/assets/b56d8007-a1c8-4cf1-ac81-5bbd767c93f2)
