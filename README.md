@@ -3,7 +3,7 @@
 - front-end
   - react
 - back-end
-  > based on java
+  > based on java 11
   - springboot
   - spring security
 - DB
